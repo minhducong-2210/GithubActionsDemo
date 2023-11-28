@@ -6,5 +6,6 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+              pip install XlsxWriter
         env:
           HTTP_PROXY: http://proxy-dmz.intel.com
