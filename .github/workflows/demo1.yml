@@ -4,8 +4,7 @@ jobs:
   my-job:
     runs-on: minhduc_laptop_label1
     steps:
-      - name: my-step
+      - name: step1
         run: echo "Hello World!"
-              pip install XlsxWriter
-        env:
-          HTTP_PROXY: http://proxy-dmz.intel.com
+      - name: step2
+        run: pip install XlsxWriter
