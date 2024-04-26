@@ -7,9 +7,9 @@ jobs:
       output1: ${{ steps.step1.outputs.test }}
       output2: ${{ steps.step2.outputs.test }}
     steps:
-      - name: step1
+      - id: step1
         run: echo "RuningBdatUnitTest" >> "$GITHUB_OUTPUT"
-      - name: step2
+      - id: step2
         run: python C:\git\GithubActionsDemo\GithubActionsDemo\PythonScriptsUnitTests\product_independent\test_os_bdat_generator.py >> "$GITHUB_OUTPUT"
 
   Job2:
