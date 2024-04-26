@@ -8,9 +8,9 @@ jobs:
       output2: ${{ steps.step2.outputs.test }}
     steps:
       - name: step1
-        run: echo "RuningBdatUnitTest"
+        run: echo "RuningBdatUnitTest" >> "$GITHUB_OUTPUT"
       - name: step2
-        run: python C:\git\GithubActionsDemo\GithubActionsDemo\PythonScriptsUnitTests\product_independent\test_os_bdat_generator.py
+        run: python C:\git\GithubActionsDemo\GithubActionsDemo\PythonScriptsUnitTests\product_independent\test_os_bdat_generator.py >> "$GITHUB_OUTPUT"
 
   Job2:
     runs-on: minhduc_laptop_label1
