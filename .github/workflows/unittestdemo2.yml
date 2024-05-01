@@ -16,6 +16,8 @@ jobs:
         run: python C:\git\GithubActionsDemo\GithubActionsDemo\PythonScriptsUnitTests\product_independent\test_os_bdat_generator.py >> "$GITHUB_OUTPUT"
 
   Job2:
+    permissions:
+      contents: write
     runs-on: minhduc_laptop_label1
     needs: Job1
     steps:
