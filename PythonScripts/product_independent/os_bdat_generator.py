@@ -29,4 +29,5 @@ class OSBdatGenerator():
                 self._logger.log(f"Retry: #{retry + 1}")
                 response = self._send_command()
                 self._logger.log(f"Bdat Response: {response}")
+                self._logger.log(f"Bdat Response1: {response}")
             return self._result
