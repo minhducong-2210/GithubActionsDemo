@@ -1,5 +1,8 @@
 name: unitestdemo1
-on: push
+on: 
+  push:
+    branches:
+      - "origin/dev_branch"
 jobs:
   Job1:
     runs-on: minhduc_laptop_label1
@@ -20,3 +23,9 @@ jobs:
           OUTPUT1: ${{needs.Job1.outputs.output1}}
           OUTPUT2: ${{needs.Job1.outputs.output2}}
         run: echo "$OUTPUT1 $OUTPUT2"
+      - name: Create Pull Request
+        uses: minhducong-2210/action-pull-request@v0.0.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          title: 'Change in Bdat generator;
+        
