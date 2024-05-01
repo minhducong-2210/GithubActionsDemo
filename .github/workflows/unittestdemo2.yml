@@ -26,5 +26,7 @@ jobs:
         run: echo "$OUTPUT1 $OUTPUT2"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6.0.5
+        with:
+          branch: main
             
         
