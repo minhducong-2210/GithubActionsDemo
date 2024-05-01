@@ -27,5 +27,5 @@ jobs:
         uses: minhducong-2210/action-pull-request@v0.0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          title: 'Change in Bdat generator;
+          title: 'Change in Bdat generator'
         
