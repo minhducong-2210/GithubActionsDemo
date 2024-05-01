@@ -30,4 +30,5 @@ class OSBdatGenerator():
                 response = self._send_command()
                 self._logger.log(f"Bdat Response: {response}")
                 self._logger.log(f"Bdat Response1: {response}")
+                self._logger.log(f"Bdat Response1: {response}")
             return self._result
