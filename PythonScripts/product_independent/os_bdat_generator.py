@@ -16,7 +16,7 @@ class OSBdatGenerator():
         def _send_command(self):
             self._marionette_output = self._os_access_provider.execute_command(self._command, 60, True, 1)
             if self._marionette_output is None:
-                # self._result = False
+                self._result = False
                 self._log_to_ituff("os_bdat_output", "No answer from Marionette")
                 self._log_to_ituff("os_bdat_output_answer", str(self._marionette_output))
                 self._logger.log("No answer from Marionette")
