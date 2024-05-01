@@ -1,4 +1,4 @@
-name: unitestdemo1
+name: unitestdemo2
 on: 
   push:
     branches:
