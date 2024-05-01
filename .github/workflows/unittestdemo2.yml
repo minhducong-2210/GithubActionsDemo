@@ -2,7 +2,7 @@ name: unitestdemo2
 on: 
   push:
     branches: 
-      - origin/dev_branch
+      - dev_branch
 jobs:
   Job1:
     runs-on: minhduc_laptop_label1
