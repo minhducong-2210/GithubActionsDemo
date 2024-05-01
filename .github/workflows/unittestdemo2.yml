@@ -19,6 +19,7 @@ jobs:
     runs-on: minhduc_laptop_label1
     needs: Job1
     steps:
+      - uses: actions/checkout@v4
       - env:
           OUTPUT1: ${{needs.Job1.outputs.output1}}
           OUTPUT2: ${{needs.Job1.outputs.output2}}
