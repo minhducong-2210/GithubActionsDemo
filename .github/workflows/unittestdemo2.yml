@@ -24,7 +24,7 @@ jobs:
           OUTPUT2: ${{needs.Job1.outputs.output2}}
         run: echo "$OUTPUT1 $OUTPUT2"
       - name: Create Pull Request
-        uses: minhducong-2210/GithubActionsDemo@v0.0.1
+        uses: minhducong-2210/GithubActionsDemo
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           title: 'Change in Bdat generator'
